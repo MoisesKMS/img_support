@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/example.jpg" type="image/jpg">
+    <title>Img Support</title>
+    <script src="/img_support.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="example">
+            <div class="img_container"></div>
+            <p class="text"></p>
+        </div>
+
+        <div class="copy">
+            <p><a href="https://github.com/MoisesKMS/img_support">Utility</a> to determine if a browser supports WEBP and AVIF formats by <a href="https://github.com/MoisesKMS">MoisesKMS</a></p>
+        </div>
+
+        <div class="use">
+            <h2 class="use__title">How to use</h2>
+            <div class="use__steps">
+                <p class="step">1. Put the <a href="https://raw.githubusercontent.com/MoisesKMS/img_support/main/img_support.js">img_support.js</a> script before close your 'head' tag and css styles.</p>
+                <p class="step">2. Into css code, add 2 classes <code>.webp</code> and <code>.avif</code> before your main class</p>
+                <p class="separatos">Example:</p>
+                <pre class="pre"><code class="code">
+                    .img_container {
+                        background-image: url(/img/example.jpg);
+                    }
+                    
+                    .webp .img_container {
+                        background-image: url(/img/example.webp);
+                    }
+                    
+                    .avif .img_container {
+                        background-image: url(/img/example.avif);
+                    }
+                </code></pre>
+                <p class="a_text">This will make the jpg, png, etc. formats loads in case the browser don't support avif or webp.</p>
+                <p class="a_text">If the browser support WEBP but no support AVIF, it only will download de WEBP image</p>
+                <p class="a_text">If the browser support AVIF, it only will download de AVIF image</p>
+                <p class="warning_text">WARNING: the order is important, if the browser support avif and you put the .avif before de .webp, the browser will use .webp instead of .avif</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

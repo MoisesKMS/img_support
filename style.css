@@ -1,0 +1,91 @@
+/* General content */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #242630;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*** Utility Use ***/
+
+.img_container {
+    background-image: url(/img/example.jpg);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.avif .img_container {
+    background-image: url(/img/example.avif);
+}
+
+.webp .img_container {
+    background-image: url(/img/example.webp);
+}
+
+
+/*** Site styles (no important) ***/
+
+a {
+    color: aqua;
+}
+
+.copy {
+    text-align: center;
+}
+
+.example {
+    max-width: 250px;
+    margin: 50px auto 0 auto;
+    display: grid;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.text::after {
+    content: 'no WEBP & AVIF support';
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.webp .text::after {
+    content: 'WEBP support';
+    color: green;
+}
+
+.avif .text::after {
+    content: 'WEBP & AVIF support';
+    color: green;
+}
+
+.use {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.pre {
+    text-align: left!important;
+    background-color: #1f1f1f;
+}
+
+.warning_text {
+    color: red;
+}
