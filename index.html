@@ -25,8 +25,8 @@
         <div class="use">
             <h2 class="use__title">How to use</h2>
             <div class="use__steps">
-                <p class="step">1. Put the <a href="https://raw.githubusercontent.com/MoisesKMS/img_support/main/img_support.js">img_support.js</a> script before close your 'head' tag and css styles.</p>
-                <p class="step">2. Into css code, add 2 classes <code>.webp</code> and <code>.avif</code> before your main class</p>
+                <p class="step">1. Add the <a href="https://raw.githubusercontent.com/MoisesKMS/img_support/main/img_support.js">img_support.js</a> script before your cloasing 'head' tag and css styles.</p>
+                <p class="step">2. In your css code, add 2 classes <code>.webp</code> and <code>.avif</code> before your main image container class</p>
                 <p class="separatos">Example:</p>
                 <pre class="pre"><code class="code">
                     .img_container {
@@ -41,10 +41,10 @@
                         background-image: url(/img/example.avif);
                     }
                 </code></pre>
-                <p class="a_text">This will make the jpg, png, etc. formats loads in case the browser don't support avif or webp.</p>
-                <p class="a_text">If the browser support WEBP but no support AVIF, it only will download de WEBP image</p>
-                <p class="a_text">If the browser support AVIF, it only will download de AVIF image</p>
-                <p class="warning_text">WARNING: the order is important, if the browser support avif and you put the .avif before de .webp, the browser will use .webp instead of .avif</p>
+                <p class="a_text">This will make the jpg, png, etc. formats load in case the browser doesn't support avif or webp.</p>
+                <p class="a_text">If the browser supports WEBP but not AVIF, it will only download de WEBP image</p>
+                <p class="a_text">If the browser supports AVIF, it will only download de AVIF image</p>
+                <p class="warning_text">WARNING: the order is important, if the browser supports avif and you add the .avif class before the .webp class, the browser will use .webp instead of .avif</p>
             </div>
         </div>
     </main>
